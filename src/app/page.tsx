@@ -1,7 +1,10 @@
-import Image from "next/image";
+import Container from "@/components/Container";
 
 export default function Home() {
   return (
-    <h1>o</h1>
+    <section className="h-screen w-full bg-primary-gray">
+      <Container/>
+    </section>
+    
   );
 }
