@@ -3,7 +3,7 @@ import AboutMeSection from '@/components/AboutMeSection'
 
 export default function Home() {
   return (
-    <section className="h-screen w-full flex flex-row bg-primary-gray px-8 py-20">
+    <section className="h-full w-full flex flex-row bg-primary-gray px-8 py-20">
       <CardProfile/>
       <AboutMeSection/>
       <div className="h-full w-72">
