@@ -1,10 +1,21 @@
 import { LuUser } from "react-icons/lu";
 import { LiaHomeSolid } from "react-icons/lia";
+import { VscTools } from "react-icons/vsc";
+import Image from "next/image";
+import Reactlogo from "@/assets/React_Logo_SVG.svg";
+import { SiStyledcomponents } from "react-icons/si";
+import FigmaLogo from "@/assets/Figma-logo.svg";
+import TailwindLogo from "@/assets/tailwind-css-2.svg";
+import NodeLogo from "@/assets/Node.js_logo.svg";
+import ExpressLogo from "@/assets/3db5d2f118206486f17bc7325886c735.svg";
+import PostgreLogo from "@/assets/Postgresql_elephant.svg";
+import StyledComponentsLogo from "@/assets/styled-components-1.svg";
+import NextJsLogo from "@/assets/nextjs-2.svg"
 
 
 export default function AboutMeSection() {
   return (
-    <section className="w-4/6 h-full  relative ml-auto px-72" >
+    <section className="w-abou-me-container  h-full  relative ml-auto px-40 py-10" >
       <header className="flex flex-col gap-14 mb-64">
         <div className="w-48 p-2 border border-second-gray rounded-full flex flex-row gap-3 items-center justify-center">
           <i>
@@ -14,7 +25,7 @@ export default function AboutMeSection() {
             INTRODUCE
           </h3>
         </div>
-        <h1 className="text-8xl text-amber-50 text-wrap font-hairline leading-tight ">
+        <h1 className="text-8xl text-amber-50 text-wrap font-hairline  ">
           Say Hi from <span className="text-sky-500">Bruno</span>, Full-Stack Web Developer
         </h1>
         <p className="text-third-gray text-xl">
@@ -39,6 +50,93 @@ export default function AboutMeSection() {
           <p className="mb-5">After graduating from high school, I entered college, majoring in Analysis and Systems Development at FIAP, where I graduated in December 2023. Before that, I sought to acquire basic knowledge through some online courses that helped me gain a general understanding of technology.</p>
 
           <p>In my free time, I enjoy watching football, movies, series, listening to music, and exploring the vast world of the web.</p>
+        </div>
+      </section>
+      <section className="flex flex-col gap-14 mb-64">
+        <div className="w-40 p-2 border border-second-gray rounded-full flex flex-row gap-3 items-center justify-center">
+          <i>
+            <VscTools color="#fff" size={19} />
+          </i>
+          <h3 className=" text-amber-50 text-md">
+            SKILLS
+          </h3>
+        </div>
+        <h2 className="text-6xl text-amber-50 text-wrap font-hairline leading-tight ">
+          My <span className="text-sky-500">Advantages</span>
+        </h2>
+        <div className="flex flex-wrap gap-8 w-full ">
+          <div className="flex flex-col gap-5">
+            <div className="w-52 h-72 rounded-full border border-second-gray border-solid flex flex-col justify-center items-center gap-5 hover:border-sky-500 duration-300">
+              <figure className="h-40 w-32">
+                <Image src={Reactlogo} alt="React Logo" className="h-full w-full"/>
+              </figure>
+              <p className="text-sky-500 text-2xl">95%</p>
+            </div>
+            <span className="m-auto text-white text-xl">React</span>
+          </div>
+          <div className="flex flex-col gap-5">
+            <div className="w-48 h-72 rounded-full border border-second-gray border-solid flex flex-col justify-center items-center gap-5 hover:border-sky-500 duration-300">
+              <figure className="h-40 w-32 flex flex-col justify-center">
+              <Image src={FigmaLogo} alt="React Logo" className="h-5/6 w-full"/>
+              </figure>
+              <p className="text-sky-500 text-2xl">86%</p>
+            </div>
+            <span className="m-auto text-white text-xl">Figma</span>
+          </div>
+          <div className="flex flex-col gap-5">
+            <div className="w-48 h-72 rounded-full border border-second-gray border-solid flex flex-col justify-center items-center gap-5 hover:border-sky-500 duration-300">
+              <figure className="h-40 w-32">
+                <Image src={TailwindLogo} alt="React Logo" className="h-full w-full"/>
+              </figure>
+              <p className="text-sky-500 text-2xl">92%</p>
+            </div>
+            <span className="m-auto text-white text-xl">Tailwind</span>
+          </div>
+          <div className="flex flex-col gap-5">
+            <div className="w-48 h-72 rounded-full border border-second-gray border-solid flex flex-col justify-center items-center gap-5 hover:border-sky-500 duration-300">
+              <figure className="h-40 w-32">
+                <Image src={NodeLogo} alt="React Logo" className="h-full w-full"/>
+              </figure>
+              <p className="text-sky-500 text-2xl">90%</p>
+            </div>
+            <span className="m-auto text-white text-xl">NodeJS</span>
+          </div>
+          <div className="flex flex-col gap-5">
+            <div className="w-48 h-72 rounded-full border border-second-gray border-solid flex flex-col justify-center items-center gap-5 hover:border-sky-500 duration-300">
+              <figure className="h-40 w-32">
+                <Image src={ExpressLogo} alt="React Logo" className="h-full w-full"/>
+              </figure>
+              <p className="text-sky-500 text-2xl">89%</p>
+            </div>
+            <span className="m-auto text-white text-xl">ExpressJS</span>
+          </div>
+          <div className="flex flex-col gap-5">
+            <div className="w-48 h-72 rounded-full border border-second-gray border-solid flex flex-col justify-center items-center gap-5 hover:border-sky-500 duration-300">
+              <figure className="h-40 w-32">
+                <Image src={PostgreLogo} alt="React Logo" className="h-full w-full"/>
+              </figure>
+              <p className="text-sky-500 text-2xl">87%</p>
+            </div>
+            <span className="m-auto text-white text-xl">PostgreSQL</span>
+          </div>
+          <div className="flex flex-col gap-5">
+            <div className="w-48 h-72 rounded-full border border-second-gray border-solid flex flex-col justify-center items-center gap-5 hover:border-sky-500 duration-300">
+              <figure className="h-40 w-32">
+                <Image src={StyledComponentsLogo} alt="React Logo" className="h-full w-full"/>
+              </figure>
+              <p className="text-sky-500 text-2xl">91%</p>
+            </div>
+            <span className="m-auto text-white text-xl">Styled Components</span>
+          </div>
+          <div className="flex flex-col gap-5">
+            <div className="w-48 h-72 rounded-full border border-second-gray border-solid flex flex-col justify-center items-center gap-5 hover:border-sky-500 duration-300">
+              <figure className="h-40 w-32">
+                <Image src={NextJsLogo} alt="React Logo" className="h-full w-full"/>
+              </figure>
+              <p className="text-sky-500 text-2xl">94%</p>
+            </div>
+            <span className="m-auto text-white text-xl">NextJS </span>
+          </div>
         </div>
       </section>
     </section>

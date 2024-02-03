@@ -46,7 +46,7 @@ export default function CardProfile() {
           </a>
         </li>
       </ul>
-      <a href="#" className="flex flex-row gap-3 justify-center items-center w-5/6 h-16 border border-solid border-primary-gray bg-sky-400 group hover:border-sky-400 hover:bg-primary-gray rounded-full duration-300">
+      <a href="#" className="flex flex-row gap-3 justify-center items-center w-5/6 h-16 border border-solid border-primary-gray bg-sky-400 group hover:border-sky-400 hover:bg-primary-gray rounded-full duration-300 shadow-blue-500">
         <i className="text-zinc-800 group-hover:text-sky-400 duration-300 flex items-center">
           <MdOutlineMail size={28} />
         </i>

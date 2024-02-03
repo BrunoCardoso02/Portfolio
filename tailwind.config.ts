@@ -15,6 +15,7 @@ const config: Config = {
       },
       width: {
         'profile-container': '32rem',
+        'abou-me-container': '75rem'
       },
       borderRadius: {
         'profile-image': '40px'
