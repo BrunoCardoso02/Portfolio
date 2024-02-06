@@ -1,14 +1,13 @@
 import CardProfile from "@/components/CardProfile";
-import AboutMeSection from '@/components/AboutMeSection'
+import AboutMeSection from '@/components/AboutMeSection';
+import NavBarContainer from "@/components/NavBarContainer"
 
 export default function Home() {
   return (
-    <section className="h-full w-full flex flex-row bg-primary-gray px-8 py-10">
+    <section id="start" className="h-full w-full flex flex-row gap-20 bg-primary-gray px-8 py-10">
       <CardProfile/>
       <AboutMeSection/>
-      <div className="h-full w-72">
-
-      </div>
+      <NavBarContainer/>
     </section>
     
   );

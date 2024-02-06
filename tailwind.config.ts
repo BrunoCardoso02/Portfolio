@@ -15,13 +15,14 @@ const config: Config = {
       },
       width: {
         'profile-container': '32rem',
-        'abou-me-container': '75rem'
+        'about-me-container': '65rem'
       },
       borderRadius: {
         'profile-image': '40px'
       },
       margin: {
-        'customMargin': '200px'
+        'primary-custom-margin': '200px',
+        'second-custom-margin': '600px'
       },
       fontWeight: {
         thin: '100',
@@ -33,7 +34,6 @@ const config: Config = {
         semibold: '600',
         bold: '700',
         extrabold: '800',
-        'extra-bold': '800',
         black: '900',
       }
     },

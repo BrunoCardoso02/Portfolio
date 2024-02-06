@@ -3,20 +3,20 @@ import { LiaHomeSolid } from "react-icons/lia";
 import { VscTools } from "react-icons/vsc";
 import Image from "next/image";
 import Reactlogo from "@/assets/React_Logo_SVG.svg";
-import { SiStyledcomponents } from "react-icons/si";
 import FigmaLogo from "@/assets/Figma-logo.svg";
 import TailwindLogo from "@/assets/tailwind-css-2.svg";
 import NodeLogo from "@/assets/Node.js_logo.svg";
 import ExpressLogo from "@/assets/3db5d2f118206486f17bc7325886c735.svg";
 import PostgreLogo from "@/assets/Postgresql_elephant.svg";
 import StyledComponentsLogo from "@/assets/styled-components-1.svg";
-import NextJsLogo from "@/assets/nextjs-2.svg"
+import NextJsLogo from "@/assets/nextjs-2.svg";
+
 
 
 export default function AboutMeSection() {
   return (
-    <section className="w-abou-me-container  h-full  relative ml-auto px-40 py-10" >
-      <header className="flex flex-col gap-14 mb-64">
+    <section className="w-about-me-container h-full ml-second-custom-margin py-10 px-5" >
+      <header className="flex flex-col gap-14 mb-48">
         <div className="w-48 p-2 border border-second-gray rounded-full flex flex-row gap-3 items-center justify-center">
           <i>
             <LiaHomeSolid color="#fff" size={19} />
@@ -26,13 +26,13 @@ export default function AboutMeSection() {
           </h3>
         </div>
         <h1 className="text-8xl text-amber-50 text-wrap font-hairline  ">
-          Say Hi from <span className="text-sky-500">Bruno</span>, Full-Stack Web Developer
+          Say Hi from <span className="text-sky-500">Bruno</span>, Full-Stack web Developer
         </h1>
         <p className="text-third-gray text-xl">
-          Full Stack Web Developer graduated in Systems Analysis and Development, specialized in creating and maintaining complete digital solutions.
+          Full Stack Developer with a focus on web and mobile applications graduated in Systems Analysis and Development, specialized in creating and maintaining complete digital solutions.
         </p>
       </header>
-      <section className="flex flex-col gap-14 mb-64">
+      <section id="about" className="flex flex-col gap-14 mb-48 py-20">
         <div className="w-40 p-2 border border-second-gray rounded-full flex flex-row gap-3 items-center justify-center">
           <i>
             <LuUser color="#fff" size={19} />
@@ -52,7 +52,7 @@ export default function AboutMeSection() {
           <p>In my free time, I enjoy watching football, movies, series, listening to music, and exploring the vast world of the web.</p>
         </div>
       </section>
-      <section className="flex flex-col gap-14 mb-64">
+      <section id="skills" className="flex flex-col gap-14 mb-48 py-20">
         <div className="w-40 p-2 border border-second-gray rounded-full flex flex-row gap-3 items-center justify-center">
           <i>
             <VscTools color="#fff" size={19} />
@@ -97,7 +97,7 @@ export default function AboutMeSection() {
               <figure className="h-40 w-32">
                 <Image src={NodeLogo} alt="React Logo" className="h-full w-full"/>
               </figure>
-              <p className="text-sky-500 text-2xl">90%</p>
+              <p className="text-sky-500 text-2xl">97%</p>
             </div>
             <span className="m-auto text-white text-xl">NodeJS</span>
           </div>
@@ -106,7 +106,7 @@ export default function AboutMeSection() {
               <figure className="h-40 w-32">
                 <Image src={ExpressLogo} alt="React Logo" className="h-full w-full"/>
               </figure>
-              <p className="text-sky-500 text-2xl">89%</p>
+              <p className="text-sky-500 text-2xl">90%</p>
             </div>
             <span className="m-auto text-white text-xl">ExpressJS</span>
           </div>
