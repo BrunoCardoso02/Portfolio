@@ -1,0 +1,19 @@
+{
+    "socialLinks": [
+        {
+            "href": "#",
+            "icon": "FaGithub",
+            "size": 25
+        },
+        {
+            "href": "#",
+            "icon": "FaLinkedin",
+            "size": 25
+        },
+        {
+            "href": "#",
+            "icon": "FaWhatsapp",
+            "size": 25
+        }
+    ]
+}
