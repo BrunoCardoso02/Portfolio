@@ -4,7 +4,7 @@ import NavBarContainer from "@/components/NavBarContainer"
 
 export default function Home() {
   return (
-    <section id="start" className="h-full w-full lg:flex lg:flex-row lg:gap-20 bg-primary-gray pl-8 pr-14 py-10">
+    <section id="start" className="h-full w-full flex sm:flex-col lg:flex-row md:flex-col lg:gap-20 bg-primary-gray md:py-4 lg:pl-8 lg:pr-14 lg:py-10">
       <CardProfile/>
       <AboutMeSection/>
       <NavBarContainer/>

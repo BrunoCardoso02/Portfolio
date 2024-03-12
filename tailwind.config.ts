@@ -37,10 +37,10 @@ const config: Config = {
         black: '900',
       },
       screens: {
-        'sm': '640px',
+        'sm': '320px',
         // => @media (min-width: 640px) { ... }
   
-        'md': '768px',
+        'md': '640px',
         // => @media (min-width: 768px) { ... }
   
         'lg': '1025px',
