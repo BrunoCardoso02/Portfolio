@@ -1,13 +1,17 @@
+"use client"
 import { LuUser } from "react-icons/lu";
 import { LiaHomeSolid } from "react-icons/lia";
 import { VscTools } from "react-icons/vsc";
 import Image from "next/image";
 import skillsData from "@/utils/skills.json";
+import { useRef, HTMLDivElement } from 'react'
+
 
 export default function AboutMeSection() {
   const { skills } = skillsData;
+
   return (
-    <section className=" sm:w-[300px] md:w-[580px] w-[900px] xl:w-[800px] xl:min-w-[476px] 2xl:w-[850px] 2xl:min-w-[695px] sm:m-auto h-full lg:ml-[500px] xl:ml-[600px] 2xl:ml-[700px] py-10 px-5" >
+    <section className=" sm:w-[330px] md:w-[580px] w-[900px] xl:w-[800px] xl:min-w-[476px] 2xl:w-[850px] 2xl:min-w-[695px] sm:m-auto h-full lg:ml-[500px] xl:ml-[600px] 2xl:ml-[700px] py-10 px-5" >
       <header className="flex flex-col sm:gap-10 lg:gap-8 xl:gap-10 2xl:gap-14 sm:mb-24 lg:mb-52 xl:mb-36 2xl:mb-48 sm:mt-5 lg:mt-0">
         <div className="w-48 p-2 border border-second-gray rounded-full flex flex-row gap-3 items-center justify-center">
           <i>
@@ -61,12 +65,12 @@ export default function AboutMeSection() {
             skills.map((skill, index) => (
               <div key={index} className="flex flex-col gap-3 mb-10">
                 <div className=" sm:w-32 md:w-40 lg:w-36 xl:w-36 2xl:w-52 sm:h-44 md:h-60 lg:h-44 xl:h-52 2xl:h-72 rounded-full border border-second-gray border-solid flex flex-col justify-center items-center  sm:gap-3 md:gap-8 lg:gap-4 hover:border-sky-500 duration-300">
-                  <figure className=" sm:h-11 md:h-20 lg:h-20 xl:h-28 2xl:h-40 lg:w-20 xl:w-24 2xl:w-32">
+                  <figure className=" sm:h-16 md:h-20 lg:h-20 xl:h-28 2xl:h-40 lg:w-20 xl:w-24 2xl:w-32">
                     <Image src={skill.logo} alt={skill.alt} height={100} width={100} className="h-full w-full" />
                   </figure>
-                  <p className="text-sky-500 text-2xl">{skill.level}</p>
+                  <p className="text-sky-500 sm:text-md md:text-2xl">{skill.level}</p>
                 </div>
-                <span className="m-auto text-white text-xl">{skill.name}</span>
+                <span className="m-auto text-white sm:text-md md:text-xl">{skill.name}</span>
               </div>
             ))
           }
@@ -75,3 +79,4 @@ export default function AboutMeSection() {
     </section>
   )
 }
+
