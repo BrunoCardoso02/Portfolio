@@ -30,7 +30,7 @@ const Introduce: React.FC = () => {
                 initial='hidden'
                 animate='visible'
                 transition={{ duration: 0.5, delay: 0.25 }}
-                className=" sm:text-[2rem] md:text-[4rem] md:leading-[4.8rem] lg:text-[2.39rem] xl:text-5xl 2xl:text-7xl lg:leading-tight xl:leading-snug 2xl:leading-tight text-amber-50 text-wrap font-hairline font-inter ">
+                className=" sm:text-[2rem] md:text-[3.6rem] md:leading-[4.8rem] lg:text-[2.16rem] xl:text-5xl 2xl:text-7xl lg:leading-tight xl:leading-snug 2xl:leading-tight text-amber-50 text-wrap font-hairline font-inter ">
                 Say Hi from <span className="text-sky-500">Bruno</span>, <br /> Full-Stack Web <br /> Developer
             </motion.h1>
             <motion.p
