@@ -1,0 +1,42 @@
+import React from 'react';
+import skillsData from "@/utils/skills.json";
+import { VscTools } from "react-icons/vsc";
+import Image from 'next/image';
+
+// import { Container } from './styles';
+
+const Skills: React.FC = () => {
+    const { skills } = skillsData;
+    return (
+        <section id="skills" className=" flex xl:max-w-[30rem] 2xl:max-w-full flex-col gap-14 mb-48 py-20">
+            <div className="w-40 p-2 border border-second-gray rounded-full flex flex-row gap-3 items-center justify-center">
+                <i>
+                    <VscTools color="#fff" size={19} />
+                </i>
+                <h3 className=" text-amber-50 text-md">
+                    SKILLS
+                </h3>
+            </div>
+            <h2 className=" sm:text-[1.2rem] md:text-[2.5rem] lg:text-[1.5rem] xl:text-[2.2rem] 2xl:text-5xl text-amber-50 text-wrap font-hairline leading-tight ">
+                My <span className="text-sky-500">Advantages</span>
+            </h2>
+            <div className="flex justify-between flex-wrap w-full">
+                {
+                    skills.map((skill, index) => (
+                        <div key={index} className="flex flex-col gap-3 mb-10">
+                            <div className=" sm:w-32 md:w-40 lg:w-36 xl:w-36 2xl:w-52 sm:h-44 md:h-60 lg:h-44 xl:h-52 2xl:h-72 rounded-full border border-second-gray border-solid flex flex-col justify-center items-center  sm:gap-3 md:gap-8 lg:gap-4 hover:border-sky-500 duration-300">
+                                <figure className=" sm:h-16 md:h-20 lg:h-20 xl:h-28 2xl:h-40 lg:w-20 xl:w-24 2xl:w-32">
+                                    <Image src={skill.logo} alt={skill.alt} height={100} width={100} className="h-full w-full" />
+                                </figure>
+                                <p className="text-sky-500 sm:text-md md:text-2xl">{skill.level}</p>
+                            </div>
+                            <span className="m-auto text-white sm:text-md md:text-xl">{skill.name}</span>
+                        </div>
+                    ))
+                }
+            </div>
+        </section>
+    );
+}
+
+export default Skills;
