@@ -12,6 +12,7 @@ const config: Config = {
         'primary-gray': '#262626',
         'second-gray': '#565656',
         'third-gray': '#999',
+        'modal-gray': '#1f1f1f'
       },
       width: {
         'profile-container': '32rem',

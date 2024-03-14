@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function NavBarContainer() {
     return (
-        <aside className="h-screen 2xl:ml-auto flex flex-col items-center justify-center">
+        <aside className="h-screen 2xl:ml-auto sm:hidden lg:flex flex-col items-center justify-center">
             <nav className="fixed">
                 <ul className="px-4 py-6 border border-second-gray rounded-full flex flex-col gap-9">
                     <li><Link href="/#start" ><i className="text-white hover:text-sky-500 duration-150"><LiaHomeSolid size={20} /></i></Link></li>

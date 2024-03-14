@@ -1,6 +1,7 @@
 import Skills from "./Skills";
 import About from "./About";
 import Introduce from "./Introduce";
+import ModalButton from "./ModalButton";
 
 export default function AboutMeSection() {
 
@@ -9,6 +10,7 @@ export default function AboutMeSection() {
       <Introduce/>
       <About/>
       <Skills/>
+      <ModalButton/>
     </section>
   )
 }
