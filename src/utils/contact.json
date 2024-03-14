@@ -1,17 +1,17 @@
 {
     "socialLinks": [
         {
-            "href": "#",
+            "href": "https://github.com/BrunoCardoso02",
             "icon": "FaGithub",
             "size": 25
         },
         {
-            "href": "#",
+            "href": "https://www.linkedin.com/in/bruno-cardoso-29790720b/",
             "icon": "FaLinkedin",
             "size": 25
         },
         {
-            "href": "#",
+            "href": "https://wa.me/5511943184728",
             "icon": "FaWhatsapp",
             "size": 25
         }

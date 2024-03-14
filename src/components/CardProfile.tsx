@@ -25,7 +25,7 @@ export default function CardProfile() {
           {
             socialLinks.map((item, index) => (
               <li key={index}>
-                <a href={item.href} className="flex items-center justify-center border border-solid border-second-gray rounded-full p-5 group hover:border-blue-500 duration-300 cursor-pointer">
+                <a href={item.href} target="_blank" className="flex items-center justify-center border border-solid border-second-gray rounded-full p-5 group hover:border-blue-500 duration-300 cursor-pointer">
                   <i className="text-gray-500 group-hover:text-sky-400 duration-300">
                     {item.icon === "FaGithub" && <FaGithub size={item.size} />}
                     {item.icon === "FaWhatsapp" && <FaWhatsapp size={item.size} />}
@@ -37,7 +37,7 @@ export default function CardProfile() {
           }
 
         </ul>
-        <a href="#" className="flex flex-row gap-3 justify-center items-center sm:w-[20rem] md:w-[30rem] lg:w-[22rem] xl:w-[24rem] sm:h-12 md:h-12 lg:h-12 xl:h-14 2xl:h-16 border border-solid border-primary-gray bg-sky-400 group hover:border-sky-400 hover:bg-primary-gray rounded-full duration-300 shadow-blue-500">
+        <a href="mailto:bruno.cardoso02@outlook.com" target="_blank" className="flex flex-row gap-3 justify-center items-center sm:w-[20rem] md:w-[30rem] lg:w-[22rem] xl:w-[24rem] sm:h-12 md:h-12 lg:h-12 xl:h-14 2xl:h-16 border border-solid border-primary-gray bg-sky-400 group hover:border-sky-400 hover:bg-primary-gray rounded-full duration-300 shadow-blue-500">
           <i className="text-zinc-800 group-hover:text-sky-400 duration-300 flex items-center">
             <MdOutlineMail size={28} />
           </i>
