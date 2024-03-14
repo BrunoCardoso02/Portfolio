@@ -2,12 +2,14 @@
 import React, {useState} from 'react';
 import { BiMenu } from "react-icons/bi";
 import Modal from './Modal';
+import { useModalContext } from '@/context/ModalContext';
 
 
 const ModalButton: React.FC = () => {
-    const [open, setOpen] = useState(false);
+
+    const {isOpen, setIsOpen} = useModalContext()
     function toggleModal (){
-        setOpen(!open);
+        setIsOpen(!isOpen);
     }
   return (
     <>
@@ -16,7 +18,7 @@ const ModalButton: React.FC = () => {
                 <BiMenu size={25} />
             </i>
         </button>
-        <Modal isOpen={open}/>
+        <Modal/>
     </>
   );
 }
