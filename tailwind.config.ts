@@ -38,7 +38,8 @@ const config: Config = {
         black: '900',
       },
       screens: {
-        'sm': '320px',
+        'mm': '320px',
+        'sm': '400px',
         // => @media (min-width: 640px) { ... }
   
         'md': '640px',

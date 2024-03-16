@@ -2,7 +2,7 @@
     "skills": [
         {
             "name": "React",
-            "logo": "../assets/React_Logo_SVG.svg",
+            "logo": "../assets/react.svg",
             "level": "95%",
             "alt": "React Logo",
             "width": 100,

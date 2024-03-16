@@ -8,7 +8,7 @@ import socialMediaLinks from "@/utils/contact.json"
 export default function CardProfile() {
   const { socialLinks } = socialMediaLinks;
   return (
-    <aside className=" sm:w-[23.4rem] md:w-[32rem] border border-solid border-second-gray rounded-3xl overflow-hidden sm:py-5 lg:py-10 lg:px-10 sm:m-auto lg:fixed flex flex-col items-center lg:w-[420px] xl:w-[480px] 2xl:w-[512px] 2xl:py-10">
+    <aside className=" mm:w-[22.5rem] sm:w-[24rem] md:w-[32rem] border border-solid border-second-gray rounded-3xl overflow-hidden mm:py-5 lg:py-10 lg:px-10 mm:m-auto lg:fixed flex flex-col items-center lg:w-[420px] xl:w-[480px] 2xl:w-[512px] 2xl:py-10">
       <div className="flex flex-col gap-4 md:gap-4 xl:gap-5 2xl:gap-7 items-center ">
         <div className=" items-center text-center">
           <h2 className=" md:text-2xl lg:text-3xl xl:text-4xl font-bold text-white font-roboto">Bruno Cardoso</h2>
@@ -37,7 +37,7 @@ export default function CardProfile() {
           }
 
         </ul>
-        <a href="mailto:bruno.cardoso02@outlook.com" target="_blank" className="flex flex-row gap-3 justify-center items-center sm:w-[20rem] md:w-[30rem] lg:w-[22rem] xl:w-[24rem] sm:h-12 md:h-12 lg:h-12 xl:h-14 2xl:h-16 border border-solid border-primary-gray bg-sky-400 group hover:border-sky-400 hover:bg-primary-gray rounded-full duration-300 shadow-blue-500">
+        <a href="mailto:bruno.cardoso02@outlook.com" target="_blank" className="flex flex-row gap-3 justify-center items-center mm:w-[20rem] md:w-[30rem] lg:w-[22rem] xl:w-[24rem] mm:h-12 md:h-12 lg:h-12 xl:h-14 2xl:h-16 border border-solid border-primary-gray bg-sky-400 group hover:border-sky-400 hover:bg-primary-gray rounded-full duration-300 shadow-blue-500">
           <i className="text-zinc-800 group-hover:text-sky-400 duration-300 flex items-center">
             <MdOutlineMail size={28} />
           </i>
