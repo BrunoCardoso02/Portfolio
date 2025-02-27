@@ -20,16 +20,16 @@ Se você quiser rodar este projeto no seu ambiente local, siga os passos abaixo:
 
 ```bash
 # Clone o repositório
-$ git clone https://github.com/seuusuario/portfolio.git
+$ git clone https://github.com/BrunoCardoso02/Portfolio.git
 
 # Acesse a pasta do projeto
 $ cd portfolio
 
 # Instale as dependências
-$ npm install  # ou yarn install
+$ npm install
 
 # Inicie o servidor de desenvolvimento
-$ npm run dev  # ou yarn dev
+$ npm run dev
 
 # Acesse no navegador: http://localhost:3000
 ```
