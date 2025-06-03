@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import { LiaHomeSolid } from "react-icons/lia";
-import { motion, useInView, useAnimation } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const Introduce: React.FC = () => {
     return (
@@ -19,7 +19,7 @@ const Introduce: React.FC = () => {
                     <LiaHomeSolid color="#fff" size={19} />
                 </i>
                 <h3 className=" text-amber-50 text-md">
-                    INTRODUCE
+                    APRESENTAÇÃO
                 </h3>
             </motion.div>
             <motion.h1
@@ -31,7 +31,7 @@ const Introduce: React.FC = () => {
                 animate='visible'
                 transition={{ duration: 0.5, delay: 0.25 }}
                 className=" mm:text-[2rem] md:text-[3.6rem] md:leading-[4.8rem] lg:text-[2.16rem] xl:text-5xl 2xl:text-7xl lg:leading-tight xl:leading-snug 2xl:leading-tight text-amber-50 text-wrap font-hairline font-inter ">
-                Say Hi from <span className="text-sky-500">Bruno</span>, <br /> Full-Stack Web <br /> Developer
+                Olá, sou o <span className="text-sky-500">Bruno</span>, <br /> Desenvolvedor Web <br /> Full Stack
             </motion.h1>
             <motion.p
                 variants={{
@@ -42,7 +42,7 @@ const Introduce: React.FC = () => {
                 animate='visible'
                 transition={{ duration: 0.5, delay: 0.25 }}
                 className="text-third-gray mm:text-[0.9rem] md:text-[1.1rem] lg:text-[0.9rem] xl:text-lg text-left">
-                Full Stack Developer with a focus on web and mobile applications graduated in Systems Analysis and Development, specialized in creating and maintaining complete digital solutions.
+                Desenvolvedor Full Stack focado em aplicações web e mobile, formado em Análise e Desenvolvimento de Sistemas, especialista em criar e manter soluções digitais completas.
             </motion.p>
         </header>
     );
